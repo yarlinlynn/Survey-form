@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp | Survey Form</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="data:image/png;base64,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">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,200&family=Poppins:ital,wght@0,200;1,100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>freeCodeCamp Survey Form</h1>
+
+    <p>
+        Thank you for taking the time to help us improve the platform
+    </p>
+
+    <form action id="survey-form">
+        <div class="row">
+            <div class="container">
+                <label>Name</label>
+                <input placeholder="Enter your name" required>
+            </div>
+    
+            <div class="container">
+                <label>Email</label>
+                <input placeholder="Enter your email" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container">
+                <label>Age<span>(optional)</span></label>
+                <input placeholder="Enter your age">
+            </div>
+
+            <div class="container">
+                <label for="dropdown-label">Which option best describes your current role?</label>
+                <select name="dropdown-role" id="dropdown-role" name="dropdown-role">
+                    <option value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="job">Full Time Learner</option>
+                    <option value="job">Prefer not to say</option>
+                    <option value="job">Other</option>
+                </select>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <label>Would you recommend freeCodeCamp to a friend?</label>
+            <div class="radio-input">
+                <input type="radio" value="not-sure" name="recommend">Definitely
+            </div>
+            <div class="radio-input">
+                <input type="radio" value="not-sure" name="recommend">Maybe
+            </div>
+            <div class="radio-input">
+                <input type="radio" value="not-sure" name="recommend">Unclear
+            </div>
+        </div>
+        
+        <div class="container">
+            <label for="dropdown-label">What is your favorite feature of freeCodeCamp?</label>
+            <select name="dropdown-role" class="drop-down-menu">
+                <option value="">Select an option</option>
+                <option value="student">Challenges</option>
+                <option value="job">Projects</option>
+                <option value="job">Community</option>
+                <option value="job">Open Source</option>
+            </select>
+        </div>
+
+        <div class="container">
+            <label>Any comments or suggestions?</label>
+            <textarea name="suggestion" placeholder="Enter your comment here...."></textarea>
+        </div>
+
+        <button>Submit</button>
+        
+    </form>
+</body>
+</html>

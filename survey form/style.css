@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5rem 1rem;
+    color: #f3f3f3;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p {
+    margin: 1rem;
+    text-align: center;
+}
+
+form {
+    background: #CDD5E0;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 21.5rem;
+}
+
+.container {
+    margin: 1rem 0;
+}
+
+label,
+input {
+    display: block;
+}
+
+label {
+    margin: 0 0.5rem 0.3rem;
+    color: rgba(27, 27, 50, 0.8);
+    font-weight: bold;
+}
+
+input,
+#dropdown-role,
+.drop-down-menu {
+    border: none;
+    width: 100%;
+    height: 2rem;
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+    color: rgba(27, 27, 50, 0.8);
+}
+
+.radio-input,
+.check-box {
+    display: flex;
+    align-items: center;
+    width: 2rem;
+    gap: 1rem;
+    margin: 0 1.5rem;
+    border: none;
+}
+
+textarea {
+    border: none;
+    width: 100%;
+    height: 5rem;
+    padding-left: 0.4rem;
+    border-radius: 0.3rem;
+}
+
+button {
+    border: none;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    background: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) );
+}
+
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        gap: 2rem;
+        align-items: end;
+    }
+
+    form {
+        width: 46rem;
+    }
+
+    .row input {
+        width: 20rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        margin: 1.5rem 14rem;
+    }
+
+    form {
+        width: 60rem;
+    }
+
+    .row input,
+    #dropdown-role {
+        width: 27rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        margin: 5rem 15rem;
+    }
+    .row input,
+    #dropdown-role {
+        width: 30rem;
+    }
+
+    form {
+        width: 66rem;
+    }
+}
